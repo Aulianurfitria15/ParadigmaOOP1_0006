@@ -8,10 +8,10 @@ public:
 	vector<anak*> daftar_anak;
 
 	ibu(string pNama) :nama(pNama) {
-		cout << "Ibu \"" << nama "\" ada\n";
+		cout << "Ibu \"" << nama << "\" ada\n";
 	}
 	~ibu() {
-		cout << "Ibu \"" << nama "\" tidak ada\n";
+		cout << "Ibu \"" << nama << "\" tidak ada\n";
 	}
 	void tambahAnak(anak*);
 	void cetakAnak();
@@ -30,4 +30,5 @@ void ibu::cetakAnak() {
 		cout << daftar_anak[i]->nama << endl;
 	}
 	cout << endl;
-}#endif
+}
+#endif
